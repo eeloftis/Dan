@@ -155,3 +155,37 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function get_settings_json() {
+
+	$path = get_template_directory() . '/settings.json';
+	$json = file_get_contents($path);
+	$json = preg_replace("/\/\*(?s).*?\*\//", "", $json);
+	$json = json_decode($json);
+	if(empty($json)) add_action( 'admin_notices', 'json_error' );
+	return $json;
+}
+
+$json = get_settings_json();
+
+/* Add theme options page by default */
+
+if( (!isset($json->acf_options)) || ( $json->acf_options->init == true) ){
+	if( function_exists('acf_add_options_page') ) {
+
+		acf_add_options_page(array(
+			'page_title'    => $json->acf_options->page_title,
+			'menu_title'    => $json->acf_options->menu_title,
+			'menu_slug'     => $json->acf_options->menu_slug
+		));
+		if( isset($json->acf_options->subpages) ){
+			foreach( $json->acf_options->subpages as $subpage ){
+				acf_add_options_sub_page(array(
+					'page_title'    => $subpage->page_title,
+					'menu_title'    => $subpage->menu_title,
+					'parent_slug'   => $json->acf_options->menu_slug,
+				));
+			}
+		}
+	}
+}

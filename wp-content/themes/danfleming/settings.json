@@ -1,0 +1,30 @@
+{
+
+	"theme_name": "danFelming",
+
+	"acf_options": {
+		"init": true,
+		"page_title": "Theme Options",
+		"menu_title": "Theme Options",
+		"menu_slug": "theme-options",
+		"subpages": {
+			"subpage_1": {
+				"page_title": "Theme General Settings",
+				"menu_title": "General"
+			},
+			"subpage_2": {
+				"page_title": "Theme Header Settings",
+				"menu_title": "Header"
+			},
+			"subpage_3": {
+				"page_title": "Theme Footer Settings",
+				"menu_title": "Footer"
+			},
+			"subpage_4": {
+				"page_title": "Theme Footer Settings",
+				"menu_title": "404"
+			}
+		}
+	}
+
+}
