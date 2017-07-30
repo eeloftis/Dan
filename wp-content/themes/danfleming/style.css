@@ -1227,7 +1227,7 @@ body {
 }
 
 
-.projectSection .odd .content-col{
+.projectSection .even .content-col{
 	left: -15px;
   padding-left: 0;
   position: relative;
@@ -1244,7 +1244,7 @@ body {
 		width: 632px;
 }
 
-.projectSection .odd .content-col:before {
+.projectSection .even .content-col:before {
   content:"";
   border-top: 40px solid #000;
   position: relative;
@@ -1254,7 +1254,7 @@ body {
   display: block;
 }
 
-.projectSection .odd .content-col:after{
+.projectSection .even .content-col:after{
   content:"";
   border-bottom: 40px solid #000;
   position: relative;
@@ -1265,7 +1265,7 @@ body {
 }
 
 
-.projectSection .odd .col-lg-5 {
+.projectSection .even .col-lg-5 {
   padding-right: 0;
 }
 
