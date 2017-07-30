@@ -39,7 +39,7 @@ the_post(); ?>
 
 
 <?php
-       $args = array( 'post_type' => 'project', 'posts_per_page' => -1 );
+       $args = array( 'post_type' => 'project', 'posts_per_page' => -1, 'order' => 'DESC' );
        $loop = new WP_Query( $args );
        $j = 0;
        while ( $loop->have_posts() ) : $loop->the_post(); ?>
