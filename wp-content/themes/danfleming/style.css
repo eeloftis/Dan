@@ -1258,7 +1258,7 @@ body {
   position:relative;
 }
 
-.projectCard .button a {
+.projectCard  a {
     color: #141414;
     border-bottom: none;
     font-weight: 700;
