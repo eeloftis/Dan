@@ -28,7 +28,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'danfleming' ); ?></a>
 	<?php
-	$logo = get_field('logo','options');
+	$logo = get_field('logo','options')['url'];
 
 	?>
 	<header id="masthead" class="site-header">
@@ -38,9 +38,9 @@
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $logo ?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src='<?php echo $logo ?>'></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $logo ?></a></p>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src='<?php echo $logo ?>'></a></p>
 			<?php
 			endif;
        ?>
