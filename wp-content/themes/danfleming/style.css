@@ -1372,6 +1372,21 @@ position:relative;
 #profile .projectSection .content-col span{
 	font-variant: small-caps;
 }
+
+.wysiwyg p {
+	font-size: 18px;
+	line-height: 28px;
+	font-family: "sofia-pro",sans-serif;
+	font-weight: 300;
+}
+
+.wysiwyg h4{
+	font-size: 18px;
+	line-height: 28px;
+	font-family: "sofia-pro",sans-serif;
+	font-weight: 500;
+}
+
 /* ==========================================================================
    Footer styles
    ========================================================================== */
