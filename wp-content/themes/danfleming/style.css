@@ -1283,10 +1283,6 @@ font-family: sofia-pro, sans-serif;
 	font-size: 14px;
 }
 
-footer .container {
-		max-width: 1110px;
-
-}
 
 footer .pull-right{
  text-align: right;
@@ -1304,9 +1300,7 @@ footer a:hover {
  padding-bottom: 2px;
 }
 
-footer .col-xs-10, footer .col-xs-10.pull-right {
-text-align:center;
-}
+
 
 @media (max-width: 768px) {
     footer {
