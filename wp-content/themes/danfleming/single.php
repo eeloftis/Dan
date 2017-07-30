@@ -16,7 +16,7 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 
 			// get_template_part( 'template-parts/content', get_post_type() );
-
+?>
 			<section class="twoColumnSection">
 			         <div class="container">
 			           <div class="row">
@@ -31,7 +31,7 @@ get_header(); ?>
 			           </div>
 			         </div>
 			     </section>
-
+<?php
 			the_post_navigation();
 
 		endwhile; // End of the loop.
