@@ -22,7 +22,7 @@ get_header(); ?>
 <style>
 
 .site-header {
-	border-color: <?php echo get_field('subtitle'); ?>;
+	border-color: <?php echo get_field('color'); ?>;
 }
 </style>
 			<section class="twoColumnSection">
