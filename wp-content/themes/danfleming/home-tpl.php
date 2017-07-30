@@ -11,7 +11,6 @@
 get_header();
 the_post(); ?>
 <?php $title = get_field('intro_title');
-
  ?>
 
 <section class="twoColumnSection">

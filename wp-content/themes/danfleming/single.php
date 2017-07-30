@@ -21,7 +21,7 @@ get_header(); ?>
 			         <div class="container">
 			           <div class="row">
 			             <div class="title-col col-lg-6 col-lg-offset-1 col-sm-10 col-md-offset-1">
-			              <h1> <?php echo $title; ?></h1>
+			              <h1> <?php the_title(); ?></h1>
 			             </div>
 			             <div class="content-col col-lg-4 col-lg-offset-0 col-sm-10 col-md-offset-1">
 			               <?php
