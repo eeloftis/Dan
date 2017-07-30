@@ -72,6 +72,12 @@ the_post(); ?>
 
        <?php else: ?>
          <div class="projectCard even row">
+         <style>
+         .projectSection .even .content-col:before,
+         .projectSection .even .content-col:after {
+           border-color:<?php echo get_field('color'); ?> ;
+         }
+         </style>
            <div class="content-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1 clearfix" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
