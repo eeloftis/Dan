@@ -42,12 +42,12 @@ the_post(); ?>
 
        <?php if (++$j % 2 == 1): ?>
          <style>
-         .projectSection #<?php echo $j;?> .content-col:before,
-         .projectSection #<?php echo $j;?> .content-col:after {
+         .projectSection #number<?php echo $j;?> .content-col:before,
+         .projectSection #number<?php echo $j;?> .content-col:after {
            border-color:<?php echo get_field('color'); ?> ;
          }
          </style>
-         <div id="<?php echo $j;?>" class="projectCard odd row">
+         <div id="number<?php echo $j;?>" class="projectCard odd row">
            <div class="image-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="<?php
            echo get_field('home_image')['url'];
            ?>" ></div>
@@ -67,12 +67,12 @@ the_post(); ?>
 
        <?php else: ?>
        <style>
-       .projectSection #<?php echo $j;?> .content-col:before,
-       .projectSection #<?php echo $j;?>  .content-col:after {
+       .projectSection #number<?php echo $j;?> .content-col:before,
+       .projectSection #number<?php echo $j;?>  .content-col:after {
          border-color:<?php echo get_field('color'); ?> ;
        }
        </style>
-         <div id="<?php echo $j;?>"class="projectCard even row">
+         <div id="number<?php echo $j;?>"class="projectCard even row">
            <div class="content-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1 clearfix" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
