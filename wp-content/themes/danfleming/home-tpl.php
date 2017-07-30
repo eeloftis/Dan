@@ -37,27 +37,35 @@ the_post(); ?>
          <div class="container">
 
 <?php
-       $args = array( 'post_type' => 'project', 'posts_per_page' => 8 );
+       $args = array( 'post_type' => 'project', 'posts_per_page' => -1 );
        $loop = new WP_Query( $args );
        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
        <?php if ($wp_query->current_post % 2 == 0): ?>
          <div class="projectCard even row">
-           <div class="col-lg-7 col-lg-offset-0 col-xs-10 col-xs-offset-1">
-             <span><?php echo get_field('initial'); ?></span>
+           <div class="col-lg-7 col-lg-offset-0 col-xs-10 col-xs-offset-1" style="background-image:url('<?php
+          echo get_field('home_background_image')['url'];
+          ?>')">
+             <span><?php echo get_field('initials'); ?></span>
              <h3><?php echo get_field('subtitle'); ?></h3>
              <h2><?php the_title(); ?></h2>
              <div class="button">
               <a href="<?php  the_permalink(); ?>">View Project</a>
             </div>
           </div>
-          <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1">image</div>
+          <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1"><img src="<?php
+         echo get_field('home_logo')['url'];
+         ?>" ></div>
          </div>
        <?php else: ?>
          <div class="projectCard odd row">
-           <div class="col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="img/projectImage.jpg" ></div>
-           <div class="col-xs-10 col-xs-offset-1 col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('img/one.gif');">
-             <span class="pull-right initials"><?php echo get_field('initial'); ?></span>
+           <div class="col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="<?php
+         	echo get_field('home_logo')['url'];
+         	?>" ></div>
+           <div class="col-xs-10 col-xs-offset-1 col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('<?php
+          echo get_field('home_background_image')['url'];
+          ?>" >');">
+             <span class="pull-right initials"><?php echo get_field('initials'); ?></span>
              <h3><?php echo get_field('subtitle'); ?></h3>
              <h2><?php the_title(); ?></h2>
              <div class="button">
