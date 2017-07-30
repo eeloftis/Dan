@@ -1227,6 +1227,48 @@ body {
 }
 
 
+.projectSection .odd .content-col{
+	left: -15px;
+  padding-left: 0;
+  position: relative;
+  margin-top: 40px;
+  height:478px;
+  padding:15px 62px 5px 60px;
+  background-position:right center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  -webkit-box-shadow: 7px 7px 37px 0px rgba(239,239,239,1);
+    -moz-box-shadow: 7px 7px 37px 0px rgba(239,239,239,1);
+    box-shadow: 7px 7px 37px 0px rgba(239,239,239,1);
+    display:block;
+		width: 632px;
+}
+
+.projectSection .odd .content-col:before {
+  content:"";
+  border-top: 40px solid #000;
+  position: relative;
+  top: -55px;
+  width: 240px;
+  left: -60px;
+  display: block;
+}
+
+.projectSection .odd .content-col:after{
+  content:"";
+  border-bottom: 40px solid #000;
+  position: relative;
+  width: 240px;
+  left: -300px;
+  bottom:-78px;
+  display: block;
+}
+
+
+.projectSection .odd .col-lg-5 {
+  padding-right: 0;
+}
+
 .projectCard {
   padding: 60px 0 60px;
 }
