@@ -28,7 +28,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'danfleming' ); ?></a>
 	<?php
-	$logo = get_field('logo','options')['url'];
+	$logo = get_field('logo','options');
 
 	?>
 	<header id="masthead" class="site-header">
