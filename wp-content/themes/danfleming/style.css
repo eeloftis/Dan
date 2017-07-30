@@ -529,14 +529,16 @@ a:active {
 	outline: 0;
 }
 
+.site-branding {
+	display: inline-block;
+
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	display: inline-block;
 }
 
 .main-navigation ul {
@@ -1053,7 +1055,12 @@ border-bottom: none;
 
 }
 
-nav li a:active:before {
+nav li.current_page_item a {
+color: #000;
+
+}
+
+nav li.current_page_item:before {
 
 content: "";
 	 -webkit-transition:border-bottom .2s;

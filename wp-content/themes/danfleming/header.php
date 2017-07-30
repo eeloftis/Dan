@@ -31,7 +31,7 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
-		<div class="site-branding" class="navbar-left">
+		<div class="site-branding navbar-left">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
@@ -54,7 +54,7 @@
 		</nav><!-- #site-navigation -->
 
 		      </div>
-					      </div>
+				</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

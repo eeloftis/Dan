@@ -16,7 +16,6 @@
 		<?php
     $copyright = get_field('copyright','options');
 		$email = get_field('email','options');
-
 		?>
 
 	<footer id="colophon" class="site-footer">
