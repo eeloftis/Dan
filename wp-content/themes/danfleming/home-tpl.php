@@ -63,7 +63,7 @@ the_post(); ?>
 
        <?php else: ?>
          <div class="projectCard even row">
-           <div class="col-lg-7 col-lg-offset-0 col-xs-10 col-xs-offset-1" style="background-image:url('<?php
+           <div class="col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
              <span><?php echo get_field('initials'); ?></span>
@@ -74,7 +74,7 @@ the_post(); ?>
             </div>
             </a>
           </div>
-          <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1"><img src="<?php
+          <div class="col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1"><img src="<?php
          echo get_field('home_image')['url'];
          ?>" ></div>
          </div>
