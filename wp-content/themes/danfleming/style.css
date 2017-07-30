@@ -1180,7 +1180,7 @@ body {
   max-width: 100%;
 }
 
-.projectSection .odd .col-lg-7 {
+.projectSection .odd .content-col{
   padding-left: 0;
   position: relative;
   margin-top: 40px;
@@ -1195,7 +1195,7 @@ body {
     display:block;
 }
 
-.projectSection .odd .col-lg-7:before {
+.projectSection .odd .content-col:before {
   content:"";
   border-top: 40px solid #82fae2;
   position: relative;
@@ -1205,7 +1205,7 @@ body {
   display: block;
 }
 
-.projectSection .odd .col-lg-7:after{
+.projectSection .odd .content-col:after{
   content:"";
   border-bottom: 40px solid #82fae2;
   position: relative;
