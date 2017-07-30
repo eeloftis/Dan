@@ -1248,10 +1248,10 @@ body {
 }
 
 .projectCard .button {
-  width: 165px;
+  width: 150px;
   border: 2px solid #000;
-  padding: 15px 0  10px 0;
-  text-align: center;
+  padding: 15px 0  10px 15px;
+  text-align: left;
   text-transform: uppercase;
   box-sizing: border-box;
   font-size: 12px;
