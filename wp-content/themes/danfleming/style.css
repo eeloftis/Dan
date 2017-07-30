@@ -1244,6 +1244,7 @@ body {
     font-size: 12px;
      font-weight: 700;
 		 padding-top: 30px;
+		 margin-bottom: 0;
 }
 
 .projectCard .button {
