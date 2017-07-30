@@ -1389,7 +1389,18 @@ position:relative;
 	line-height: 28px;
 	font-family: "sofia-pro",sans-serif;
 	font-weight: 500;
+	margin-bottom: 0;
 }
+
+.wysiwyg .one_half{
+	padding-right: 40px;
+}
+
+.wysiwyg .one_half.last_column{
+	padding-left: 40px;
+}
+
+
 
 /* ==========================================================================
    Footer styles
