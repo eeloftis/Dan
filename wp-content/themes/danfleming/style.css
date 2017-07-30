@@ -1298,6 +1298,7 @@ body {
 .projectCard.even h2,
 .projectCard.even h3 {
 	text-align: right;
+	float:right;
 }
 
 .projectCard  a {
