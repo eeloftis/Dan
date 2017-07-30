@@ -49,7 +49,7 @@ the_post(); ?>
            ?>" ></div>
            <div class="col-xs-10 col-xs-offset-1 col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
-          ?>" >');">
+          ?>')">
              <span class="pull-right initials"><?php echo get_field('initials'); ?></span>
              <h3><?php echo get_field('subtitle'); ?></h3>
              <h2><?php the_title(); ?></h2>
