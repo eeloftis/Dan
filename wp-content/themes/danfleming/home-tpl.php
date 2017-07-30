@@ -53,9 +53,11 @@ the_post(); ?>
              <span class="pull-right initials"><?php echo get_field('initials'); ?></span>
              <h3><?php echo get_field('subtitle'); ?></h3>
              <h2><?php the_title(); ?></h2>
+             <a href="<?php  the_permalink(); ?>">
              <div class="button">
-              <a href="<?php  the_permalink(); ?>">View Project</a>
+              View Project
              </div>
+             </a>
           </div>
          </div>
 
@@ -67,9 +69,10 @@ the_post(); ?>
              <span><?php echo get_field('initials'); ?></span>
              <h3><?php echo get_field('subtitle'); ?></h3>
              <h2><?php the_title(); ?></h2>
-             <div class="button">
-              <a href="<?php  the_permalink(); ?>">View Project</a>
+            <a href="<?php  the_permalink(); ?>"> <div class="button">
+              View Project
             </div>
+            </a>
           </div>
           <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1"><img src="<?php
          echo get_field('home_image')['url'];
