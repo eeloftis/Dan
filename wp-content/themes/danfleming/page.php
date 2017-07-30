@@ -17,11 +17,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-				the_content();
-
+			<div class="container">
+				<div class="row">
+				<?php the_content(); ?>
+</div>
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();
