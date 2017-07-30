@@ -75,7 +75,7 @@ the_post(); ?>
            <div class="content-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
-             <span><?php echo get_field('initials'); ?></span>
+             <span class="pull-left initials"><?php echo get_field('initials'); ?></span>
              <h3><?php echo get_field('subtitle'); ?></h3>
              <h2><?php the_title(); ?></h2>
             <a href="<?php  the_permalink(); ?>"> <div class="button">
