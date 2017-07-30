@@ -12,7 +12,9 @@
  * @package danFleming
  */
 
-get_header(); ?>
+get_header();
+the_post();
+ ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
