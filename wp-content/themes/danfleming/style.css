@@ -1180,7 +1180,12 @@ body {
   max-width: 100%;
 }
 
+.projectSection .image-col {
+	max-width: 508px;
+}
+
 .projectSection .odd .content-col{
+	left: -15px;
   padding-left: 0;
   position: relative;
   margin-top: 40px;
