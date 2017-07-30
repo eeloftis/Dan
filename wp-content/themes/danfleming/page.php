@@ -12,18 +12,24 @@
  * @package danFleming
  */
 
-get_header();
-the_post();
- ?>
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+
 			<div class="container">
 				<div class="row">
-				<?php the_content(); ?>
-</div>
-</div>
+			<?php
+			while ( have_posts() ) : the_post();
+
+				get_template_part( 'template-parts/content', 'page' );
+
+
+
+			endwhile; // End of the loop.
+			?>
+	</div>	</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
