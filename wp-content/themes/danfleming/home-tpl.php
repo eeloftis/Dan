@@ -36,15 +36,23 @@ the_post(); ?>
        <section class="projectSection">
          <div class="container">
 
+
+
 <?php
        $args = array( 'post_type' => 'project', 'posts_per_page' => -1 );
        $loop = new WP_Query( $args );
        $j = 0;
        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-      
-       <?php if (++$j % 2 == 0): ?>
 
+       <?php if (++$j % 2 == 0): ?>
+         <style>
+         .projectSection .odd .content-col:before,
+         .projectSection .odd .content-col:after {
+           border-color:<?php echo get_field('color'); ?> ;
+         }
+
+         </style>
          <div class="projectCard odd row">
            <div class="image-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="<?php
            echo get_field('home_image')['url'];
