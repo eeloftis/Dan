@@ -1183,7 +1183,7 @@ body {
 .projectSection .odd .col-lg-7 {
   padding-left: 0;
   position: relative;
-  margin-top: 42px;
+  margin-top: 40px;
   height:474px;
   padding:15px 0 0 60px;
   background-position:right center;
@@ -1197,9 +1197,9 @@ body {
 
 .projectSection .odd .col-lg-7:before {
   content:"";
-  border-top: 42px solid #82fae2;
+  border-top: 40px solid #82fae2;
   position: relative;
-  top: -62px;
+  top: -55px;
   width: 240px;
   left: -60px;
   display: block;
