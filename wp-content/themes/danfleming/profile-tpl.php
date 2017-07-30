@@ -14,15 +14,15 @@ the_post(); ?>
 $content = get_field('intro_content');
  ?>
 
-<section class="twoColumnSection">
+<section id="profile" class="twoColumnSection">
          <div class="container">
            <div class="row">
-             <div class="title-col col-lg-6 col-lg-offset-1 col-sm-10 col-md-offset-1">
+             <div class="title-col col-lg-5 col-lg-offset-1 col-sm-10 col-md-offset-1">
               <h1> <?php
                 echo $title;
                 ?></h1>
              </div>
-             <div class="content-col col-lg-4 col-lg-offset-0 col-sm-10 col-md-offset-1">
+             <div class="content-col col-lg-5 col-lg-offset-0 col-sm-10 col-md-offset-1">
                <?php
                  echo $content;
 
