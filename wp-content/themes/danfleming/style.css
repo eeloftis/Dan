@@ -1207,9 +1207,8 @@ body {
 
 .projectSection .odd .col-lg-7:after{
   content:"";
-  border-bottom: 42px solid #82fae2;
+  border-bottom: 40px solid #82fae2;
   position: relative;
-
   width: 240px;
   left: -300px;
   bottom:-180px;
