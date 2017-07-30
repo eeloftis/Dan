@@ -13,8 +13,8 @@ the_post(); ?>
 <?php $title = get_field('intro_title');
 $content = get_field('intro_content');
  ?>
-
-<section id="profile" class="twoColumnSection">
+<article id="profile">
+<section class="twoColumnSection">
          <div class="container">
            <div class="row">
              <div class="title-col col-lg-5 col-lg-offset-1 col-sm-10 col-md-offset-1">
@@ -66,5 +66,5 @@ $content = get_field('intro_content');
      </div>
    </section>
 
-
+</article>
 	<?php get_footer(); ?>

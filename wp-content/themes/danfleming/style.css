@@ -1363,6 +1363,15 @@ top: -10px;
 width: 456px;
 position:relative;
 }
+
+#profile .projectSection .content-col:before,
+#profile .projectSection .content-col:after {
+	border-color:#0000ff;
+}
+
+#profile .projectSection .content-col span{
+	font-variant: small-caps;
+}
 /* ==========================================================================
    Footer styles
    ========================================================================== */
