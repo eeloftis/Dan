@@ -31,14 +31,9 @@ the_post(); ?>
          </div>
        </section>
 
-
-
        <section class="projectSection">
          <div class="container">
-
-
-
-<?php
+    <?php
        $args = array( 'post_type' => 'project', 'posts_per_page' => -1, 'order' => 'ASC' );
        $loop = new WP_Query( $args );
        $j = 0;
@@ -47,7 +42,7 @@ the_post(); ?>
 
        <?php if (++$j % 2 == 1): ?>
          <style>
-         .projectSection .odd .content-col:before,
+         .projectSection .odd #<php? echo $j;?> .content-col:before,
          .projectSection .odd .content-col:after {
            border-color:<?php echo get_field('color'); ?> ;
          }
@@ -56,7 +51,7 @@ the_post(); ?>
            <div class="image-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="<?php
            echo get_field('home_image')['url'];
            ?>" ></div>
-           <div class="content-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('<?php
+           <div id="<php? echo $j;?>"class="content-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
              <span class="pull-right initials"><?php echo get_field('initials'); ?></span>
@@ -100,8 +95,5 @@ the_post(); ?>
            </div>
          </div>
        </section>
-
-
-
 
 	<?php get_footer(); ?>
