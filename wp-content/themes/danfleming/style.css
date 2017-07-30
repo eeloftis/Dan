@@ -1244,6 +1244,7 @@ body {
 .projectCard h3 {
     font-size: 12px;
      font-weight: 700;
+		 padding-bottom: 35px;
 }
 
 .projectCard .button {
