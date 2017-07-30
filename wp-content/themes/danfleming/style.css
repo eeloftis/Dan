@@ -1156,7 +1156,7 @@ body {
 .twoColumnSection .content-col {
 	min-width: 415px;
 }
-.twoColumnSection .image-col {
+.twoColumnSection .title-col {
     position: relative;
   left: -30px;
 }
