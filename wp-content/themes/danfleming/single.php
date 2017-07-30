@@ -34,12 +34,26 @@ get_header(); ?>
 			             </div>
 			             <div class="content-col col-lg-4 col-lg-offset-0 col-sm-10 col-md-offset-1">
 			               <?php
-			                 the_content();
-			                 ?>
+			          ?> <h3> <?php echo get_field('tag'); ?> &bull; <?php echo get_field('date');?></h3>
+								<p> <?php echo get_field('intro_copy'); ?> </p>
 			               </div>
 			           </div>
 			         </div>
 			     </section>
+
+					 <section class="wysiwyg">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-10 col-lg-offset-1 col-sm-10">
+<img src="<?php echo get_field('featured_image')['url']; ?>"> 
+					 <?php
+
+						 the_content();
+						 ?>
+		</div>
+					 </div>
+				 </div>
+			 </section>
 <?php
 			the_post_navigation();
 
