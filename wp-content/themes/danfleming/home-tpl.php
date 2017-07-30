@@ -40,7 +40,7 @@ the_post(); ?>
 <?php
        $args = array( 'post_type' => 'project', 'posts_per_page' => 8 );
        $loop = new WP_Query( $args );
-       while ( $loop->have_posts() ) : $loop->the_post();
+       while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
        <?php if ($wp_query->current_post % 2 == 0): ?>
          <div class="projectCard even row">
@@ -66,7 +66,7 @@ the_post(); ?>
              </div>
           </div>
          </div>
-       <?php endif
+       <?php endif;
        endwhile;
 
        ?>
