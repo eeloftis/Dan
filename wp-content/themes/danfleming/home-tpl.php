@@ -71,8 +71,8 @@ the_post(); ?>
          </div>
 
        <?php else: ?>
-         <div class="projectCard even row clearfix">
-           <div class="content-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1" style="background-image:url('<?php
+         <div class="projectCard even row">
+           <div class="content-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1 clearfix" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
              <span class="pull-left initials"><?php echo get_field('initials'); ?></span>
