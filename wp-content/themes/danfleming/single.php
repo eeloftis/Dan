@@ -7,6 +7,7 @@
  * @package danFleming
  */
 
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -17,6 +18,13 @@ get_header(); ?>
 
 			// get_template_part( 'template-parts/content', get_post_type() );
 ?>
+
+<style>
+
+.site-header {
+	border-color: <?php echo get_field('subtitle'); ?>;
+}
+</style>
 			<section class="twoColumnSection">
 			         <div class="container">
 			           <div class="row">
