@@ -1128,6 +1128,10 @@ body {
 
 }
 
+.twoColumnSection {
+	margin-bottom: 5px;
+}
+
 .twoColumnSection a {
   border-bottom: 6px solid #E6E6E6;
   color: #141414;
@@ -1276,7 +1280,7 @@ body {
 }
 
 .projectCard {
-  padding: 60px 0 60px;
+  padding: 65px 0 65px;
 }
 
 .projectCard .initials {
