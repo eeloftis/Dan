@@ -1153,10 +1153,10 @@ body {
 }
 
 
-.twoColumnSection {
-
+.twoColumnSection .content-col {
+	min-width: 415px;
 }
-.twoColumnSection .col-lg-offset-1 {
+.twoColumnSection .image-col {
     position: relative;
   left: -30px;
 }
@@ -1164,7 +1164,7 @@ body {
 .twoColumnSection h1 {
   font-size: 80px;
   line-height: 80px;
-  margin-top: 6px;
+  margin-top: 1px;
   font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -1177,7 +1177,7 @@ body {
 .twoColumnSection p {
   font-size: 24px;
   line-height: 40px;
-  margin-top: 20px;
+  margin-top: 2px;
   font-family: "sofia-pro",sans-serif;
 	font-weight: 300;
 }
