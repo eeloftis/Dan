@@ -993,7 +993,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.header {
+	 @media (min-width: 1200px) {
+
+	 .container {
+	     width: 1140px;
+	 }
+}
+.site-header {
 border-left: 20px solid black;
 }
 header {
@@ -1022,9 +1028,7 @@ margin-left: 5px;
 float: right;
 }
 
-@media  and max-width(1110px) {
 
-}
 
 nav li {
  display: inline-block;
@@ -1272,7 +1276,7 @@ position:relative;
 footer {
 background-color: #141414;
 color: #fff;
-padding: 70px 0 60px 5px;
+padding: 70px 0 60px 0;
 font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 300;
