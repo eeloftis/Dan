@@ -1174,7 +1174,7 @@ body {
   font-weight: 900;
 }
 
-.twoColumnSection h1 span {
+.twoColumnSection h1 span, .twoColumnSection  span {
     font-variant: small-caps;
 }
 
