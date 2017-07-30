@@ -1373,6 +1373,10 @@ position:relative;
 	font-variant: small-caps;
 }
 
+.wysiwyg {
+	padding-bottom: 25px;
+}
+
 .wysiwyg p {
 	font-size: 18px;
 	line-height: 28px;
@@ -1398,6 +1402,7 @@ font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 300;
 	font-size: 14px;
+	margin-top: 65px;
 }
 
 
