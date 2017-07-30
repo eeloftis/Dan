@@ -1043,6 +1043,7 @@ nav li {
  text-transform: uppercase;
  margin: 0 16px;
  box-sizing:border-box;
+ letter-spacing: 1px;
 }
 
 nav li:last-child {
@@ -1055,6 +1056,9 @@ nav li a {
 	 position: relative;
 		 background: transparent;
 		 border-bottom: none;
+		 color: #000;
+}
+a:visited {
 		 color: #000;
 }
 nav li a:hover {
