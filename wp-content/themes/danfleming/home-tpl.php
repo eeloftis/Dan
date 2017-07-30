@@ -45,7 +45,7 @@ the_post(); ?>
        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 
-       <?php if (++$j % 2 == 0): ?>
+       <?php if (++$j % 2 == 1): ?>
          <style>
          .projectSection .odd .content-col:before,
          .projectSection .odd .content-col:after {
