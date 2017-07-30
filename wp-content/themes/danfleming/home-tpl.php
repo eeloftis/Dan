@@ -51,7 +51,6 @@ the_post(); ?>
          .projectSection .odd .content-col:after {
            border-color:<?php echo get_field('color'); ?> ;
          }
-
          </style>
          <div class="projectCard odd row">
            <div class="image-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="<?php

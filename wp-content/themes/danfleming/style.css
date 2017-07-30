@@ -1203,7 +1203,7 @@ body {
 
 .projectSection .odd .content-col:before {
   content:"";
-  border-top: 40px solid #82fae2;
+  border-top: 40px solid #000;
   position: relative;
   top: -55px;
   width: 240px;
@@ -1213,7 +1213,7 @@ body {
 
 .projectSection .odd .content-col:after{
   content:"";
-  border-bottom: 40px solid #82fae2;
+  border-bottom: 40px solid #000;
   position: relative;
   width: 240px;
   left: -300px;
