@@ -44,8 +44,8 @@ get_header(); ?>
 					 <section class="wysiwyg">
 										<div class="container">
 											<div class="row">
-												<div class="col-lg-10 col-lg-offset-1 col-sm-10">
-<img src="<?php echo get_field('featured_image')['url']; ?>"> 
+												<div class="col-lg-12 col-sm-10">
+<img src="<?php echo get_field('featured_image')['url']; ?>">
 					 <?php
 
 						 the_content();
