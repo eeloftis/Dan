@@ -1280,6 +1280,12 @@ padding: 70px 0 60px 0;
 font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 300;
+	font-size: 14px;
+}
+
+footer .container {
+		max-width: 1110px;
+
 }
 
 footer .pull-right{
