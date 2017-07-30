@@ -11,6 +11,7 @@
 get_header();
 the_post(); ?>
 <?php $title = get_field('intro_title');
+$content = get_field('intro_content');
  ?>
 
 <section class="twoColumnSection">
@@ -23,7 +24,8 @@ the_post(); ?>
              </div>
              <div class="content-col col-lg-4 col-lg-offset-0 col-sm-10 col-md-offset-1">
                <?php
-                 the_content();
+                 echo $content;
+
                  ?>
                </div>
            </div>
@@ -48,5 +50,21 @@ the_post(); ?>
          </div>
          </div>
        </section>
+
+
+       <section class="twoColumnSection">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-sm-10">
+
+       <?php
+
+         the_content();
+         ?>
+</div>
+       </div>
+     </div>
+   </section>
+
 
 	<?php get_footer(); ?>
