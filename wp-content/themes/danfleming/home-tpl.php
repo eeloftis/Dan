@@ -42,16 +42,16 @@ the_post(); ?>
 
        <?php if (++$j % 2 == 1): ?>
          <style>
-         .projectSection .odd #<?php echo $j;?> .content-col:before,
-         .projectSection .odd .content-col:after {
+         .projectSection #<?php echo $j;?> .content-col:before,
+         .projectSection #<?php echo $j;?> .content-col:after {
            border-color:<?php echo get_field('color'); ?> ;
          }
          </style>
-         <div class="projectCard odd row">
+         <div id="<?php echo $j;?>" class="projectCard odd row">
            <div class="image-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="<?php
            echo get_field('home_image')['url'];
            ?>" ></div>
-           <div id="<?php echo $j;?>"class="content-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('<?php
+           <div class="content-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
              <span class="pull-right initials"><?php echo get_field('initials'); ?></span>
@@ -66,13 +66,13 @@ the_post(); ?>
          </div>
 
        <?php else: ?>
-         <div class="projectCard even row">
-         <style>
-         .projectSection .even .content-col:before,
-         .projectSection .even .content-col:after {
-           border-color:<?php echo get_field('color'); ?> ;
-         }
-         </style>
+       <style>
+       .projectSection #<?php echo $j;?> .content-col:before,
+       .projectSection #<?php echo $j;?>  .content-col:after {
+         border-color:<?php echo get_field('color'); ?> ;
+       }
+       </style>
+         <div id="<?php echo $j;?>"class="projectCard even row">
            <div class="content-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1 clearfix" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
