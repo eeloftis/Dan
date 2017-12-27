@@ -1183,6 +1183,12 @@ nav li a:focus {
  }
 }
 
+@media (max-width: 320px) {
+	nav li:last-child {
+		margin-right: 15px;
+	}
+}
+
 body {
   color: #141414;
     font-family: "sofia-pro",sans-serif;
