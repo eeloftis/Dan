@@ -55,7 +55,7 @@ $content = get_field('intro_content');
        <section class="wysiwyg">
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 col-sm-10">
+                    <div class="col-xl-10 col-xl-offset-1 col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 
        <?php
 

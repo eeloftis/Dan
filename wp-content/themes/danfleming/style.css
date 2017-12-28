@@ -1635,6 +1635,30 @@ bottom: -334px;
 }
 
 
+@media (max-width: 768px) {
+.wysiwyg .one_half {
+	width: 100%;
+	padding: 0 60px;
+	margin-bottom: 0;
+}
+.wysiwyg .one_half.last_column {
+    padding-left: 60px;
+}
+}
+
+
+@media (max-width: 340px) {
+.wysiwyg .one_half {
+
+	padding: 0 30px;
+
+}
+.wysiwyg .one_half.last_column {
+    padding-left: 30px;
+}
+}
+
+
 /* ==========================================================================
    Footer styles
    ========================================================================== */
@@ -1674,9 +1698,7 @@ footer a:hover {
     padding-right: 15px !important;
     padding-top: 25px;
   }
-}
 
-@media (max-width: 769px) {
   footer div {
     text-align: center !important;
   }
