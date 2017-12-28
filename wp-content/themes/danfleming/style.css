@@ -1274,7 +1274,7 @@ body {
 
 @media (max-width: 1199px) {
   .projectSection .odd .content-col {
-    height: 375px;
+    height: 376px;
     min-width: 445px;
     margin-top: 30px;
   }
@@ -1284,10 +1284,16 @@ body {
     width: 200px;
   }
   .projectSection .odd .content-col:after {
-    bottom: -42px;
+    bottom: -46px;
     border-bottom: 30px solid #000;
     width: 200px;
     left: -260px;
+  }
+
+	.projectSection .even .content-col {
+    height: 375px;
+    min-width: 445px;
+    margin-top: 30px;
   }
 }
 
@@ -1299,10 +1305,13 @@ body {
   }
   .projectSection .odd .content-col:before {
     width: 150px;
+		  top: -30px;
+			left: -50px;
   }
   .projectSection .odd .content-col:after {
     width: 150px;
-    left: -210px;
+    left: -200px;
+		bottom: -8px;
   }
 }
 
@@ -1320,7 +1329,7 @@ body {
   -moz-box-shadow: 7px 7px 37px 0px rgba(239, 239, 239, 1);
   box-shadow: 7px 7px 37px 0px rgba(239, 239, 239, 1);
   display: block;
-  width: 632px;
+  min-width: 632px;
 }
 
 .projectSection .even .content-col:before {
@@ -1339,12 +1348,64 @@ body {
   position: relative;
   width: 240px;
   right: -572px;
-  bottom: -105px;
+bottom: -334px;
   display: block;
 }
 
 .projectSection .even .col-lg-5 {
   padding-right: 0;
+}
+
+@media (max-width: 1199px) {
+
+
+	.projectSection .even .content-col {
+    height: 376px;
+    min-width: 445px;
+    margin-top: 30px;
+  }
+
+	.projectSection .even .content-col:before {
+
+	  border-top: 30px solid #000;
+
+	  top: -45px;
+	  width: 200px;
+	  right: -305px;
+
+	}
+
+	.projectSection .even .content-col:after {
+
+	  border-bottom: 30px solid #000;
+
+	  width: 200px;
+	  right: -505px;
+	  bottom: -252px;
+
+	}
+}
+
+@media (max-width: 991px) {
+
+	.projectSection .even .content-col {
+		min-width: 375px;
+		height: 283px;
+		padding: 0 30px 5px 50px;
+	}
+	.projectSection .even .content-col:before {
+		width: 150px;
+		    right: -238px;
+				top: -30px;
+	}
+	.projectSection .even .content-col:after {
+		width: 150px;
+		right: -388px;
+    bottom: -174px;
+	}
+
+
+
 }
 
 .projectCard {
@@ -1424,6 +1485,7 @@ body {
   position: relative;
   right: -350px;
   bottom: -256px;
+	transition: width .3s ease;
 }
 
 .projectCard.even .button:after {
@@ -1436,11 +1498,23 @@ body {
   position: relative;
 }
 
+.projectCard.even .button:hover:after {
+	-webkit-transform: rotate(180deg);
+	 -moz-transform: rotate(180deg);
+	 -o-transform: rotate(180deg);
+	 -ms-transform: rotate(180deg);
+	 transform: rotate(180deg);
+  width: 0;
+}
+
 @media (max-width: 1199px) {
   .projectCard h2 {
     font-size: 48px;
     padding-bottom: 25px;
   }
+	.projectCard.even h3 {
+		padding-top: 10px;
+	}
   .projectCard .button:after {
     width: 388px;
   }
@@ -1448,12 +1522,29 @@ body {
     font-size: 21px;
     line-height: 24px;
   }
+
+.projectCard.even .button {
+	    right: -281px;
+			    bottom: -206px;
+}
+
+
+	.projectCard.even .button:after {
+    left: -343px;
+	  width: 388px;
+
+	}
 }
 
 @media (max-width: 991px) {
   .projectCard h3 {
     padding-top: 0;
   }
+
+	.projectCard.even h3 {
+		padding-top: 0;
+		margin-top: 0;
+	}
   .projectCard .initials {
     position: relative;
     top: -12px;
@@ -1470,6 +1561,14 @@ body {
   .projectCard .button:after {
     width: 270px;
   }
+	.projectCard.even .button {
+    right: -195px;
+		bottom: -165px;
+	}
+	.projectCard.even .button:after {
+		width: 270px;
+		left: -248px;
+	}
 }
 
 #profile .projectSection .content-col:before, #profile .projectSection .content-col:after {

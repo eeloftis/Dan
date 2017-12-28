@@ -72,7 +72,7 @@ the_post(); ?>
        }
        </style>
          <div id="number<?php echo $j;?>"class="projectCard even row">
-           <div class="content-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1 clearfix" style="background-image:url('<?php
+           <div class="content-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0" style="background-image:url('<?php
           echo get_field('home_background_image')['url'];
           ?>')">
              <span class="pull-left initials"><?php echo get_field('initials'); ?></span>
@@ -83,7 +83,7 @@ the_post(); ?>
             </div>
             </a>
           </div>
-          <div class="image-col col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1"><img src="<?php
+          <div class="image-col col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0"><img src="<?php
          echo get_field('home_image')['url'];
          ?>" ></div>
          </div>
