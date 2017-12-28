@@ -1588,7 +1588,7 @@ bottom: -334px;
 }
 
 #profile .projectSection .odd .content-col:after {
-	bottom: -84px !important;
+	bottom: -84px;
 }
 
 #profile .projectSection .content-col span {
