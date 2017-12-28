@@ -1593,13 +1593,13 @@ bottom: -334px;
 
 @media (max-width: 1199px) {
   #profile .projectSection .odd .content-col:after {
-    bottom: -46px;
+    bottom: -48px;
   }
 }
 
 @media (max-width: 991px) {
   #profile .projectSection .odd .content-col:after {
-		bottom: -8px;
+		bottom: -10px;
   }
 }
 
