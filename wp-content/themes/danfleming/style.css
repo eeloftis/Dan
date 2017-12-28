@@ -933,9 +933,21 @@ header object, header img {
   max-width: 62px;
 }
 
-header object:hover {
-  fill: #fff;
+#Artwork {
+	-webkit-transition: fill .2s ease;
+	-moz-transition: fill .2s ease;
+	-ms-transition: fill .2s ease;
+	-o-transition: fill .2s ease;
+	transition: fill .2s ease;
 }
+
+#Artwork:hover {
+	fill: #0000FF;
+}
+
+/* header object:hover {
+  fill: #fff;
+} */
 
 header .container {
   max-height: 60px;
