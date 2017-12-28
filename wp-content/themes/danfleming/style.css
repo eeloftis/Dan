@@ -1587,8 +1587,8 @@ bottom: -334px;
   border-color: #0000ff;
 }
 
-#profile .projectSection .content-col:after {
-	bottom: -84px;
+#profile .projectSection .odd .content-col:after {
+	bottom: -84px !important;
 }
 
 #profile .projectSection .content-col span {
