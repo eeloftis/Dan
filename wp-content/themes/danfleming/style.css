@@ -1587,6 +1587,10 @@ bottom: -334px;
   border-color: #0000ff;
 }
 
+#profile .projectSection .content-col:after {
+	bottom: -84px;
+}
+
 #profile .projectSection .content-col span {
   font-variant: small-caps;
 }
