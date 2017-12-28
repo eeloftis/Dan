@@ -1591,6 +1591,18 @@ bottom: -334px;
 	bottom: -84px;
 }
 
+@media (max-width: 1199px) {
+  #profile .projectSection .odd .content-col:after {
+    bottom: -46px;
+  }
+}
+
+@media (max-width: 991px) {
+  #profile .projectSection .odd .content-col:after {
+		bottom: -8px;
+  }
+}
+
 #profile .projectSection .content-col span {
   font-variant: small-caps;
 }
